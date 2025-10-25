@@ -6,9 +6,35 @@
     --hover-color: #404bbf;
 }
 
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo-web {
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+}
+
+.logo-studio {
+    color: var(--main-color);
+    letter-spacing: 0.02em;
+}
+
+footer .logo-web {
+    color: var(--accent-color); 
+}
+
+footer .logo-studio {
+    color: var(--background-light);
+}
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    color: var(--text-color);
 }
 
 h1,
@@ -35,23 +61,42 @@ a {
     color: inherit;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 120px;
-    border-bottom: 1px solid #e7e9fc;
+    padding: 24px 156px;
+    gap: 40px;
 }
 
-header a{
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--main-color);
-}
-
-nav ul{
+.nav-list {
     display: flex;
     gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link,
+.address-link {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.address-link:hover,
+.nav-link:hover {
+    color: var(--hover-color);
 }
 
 nav a:hover,
